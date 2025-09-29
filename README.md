@@ -21,4 +21,5 @@ mean squared error (RMSE), and a 96.0% R² score in calorie
 estimation, making it both highly effective and accurate for real-
 world food calorie calculations.
 
-https://drive.google.com/file/d/14qpW2jkrmYKVkTj59Nn6YoTBsbG-Tjxt/view?usp=sharing
+
+![Food Calorie](https://github.com/user-attachments/assets/80407c48-6b1d-412a-8075-e56ac31fd4f3)
