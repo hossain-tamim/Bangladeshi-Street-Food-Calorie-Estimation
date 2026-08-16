@@ -1,25 +1,6 @@
 # Bangladeshi-Street-Food-Calorie-Estimation
 
-As obesity rates continue to increase, automated
-calorie tracking has become a vital tool for people seeking to
-maintain a healthy lifestyle or adhere to a diet plan. Although
-numerous research efforts have addressed this issue, existing
-approaches often face key limitations, such as providing only
-constant caloric output, struggling with multiple food recognition
-challenges, challenges in image scaling and normalization, and
-a predominant focus on Western cuisines. In this paper, we
-propose a tailored solution that specifically targets Bangladeshi
-street food. We first construct a diverse dataset of popular street
-foods found across Bangladesh. Then, we develop a refined calorie
-estimation system by modifying the state-of-the-art vision model
-YOLOv8. Our modified model achieves superior classification
-and segmentation results, with only a slight increase in com-
-putational complexity compared to the base variant. Coupled
-with a machine learning regression model, our system achieves
-an impressive 6.94 mean absolute error (MAE), 11.03 root
-mean squared error (RMSE), and a 96.0% R² score in calorie
-estimation, making it both highly effective and accurate for real-
-world food calorie calculations.
+With obesity emerging as a major global health concern, accurate calorie estimation systems have become increasingly important for effective dietary management. Current vision-based approaches are inappropriate for Bangladeshi street food, which is widely consumed and culturally significant, because they mostly focus on Western cuisines and often overlook portion size. The purpose of this research is to offer a vision-based calorie estimation methodology that was created especially for street food in Bangladesh. Training, validation and testing splits were created from a proprietary dataset of 3,885 photos from six classes (Singara, Somusa, Puri, Peaju, Beguni, and Coin as a reference). Five detection and segmentation architectures, YOLOv8n, YOLO11n, YOLO12n, YOLO26n and RF-DETR, were methodically compared. Food dimensions were scaled using a Bangladeshi 5 Taka coin as a reference. To predict calories, extracted geometric characteristics were subsequently fed into machine learning regression models such as Random Forest, Gradient Boost, and AdaBoost. YOLO11n outperformed other models with the best detection performance, achieving 96.1\% mAP@50 and balanced mask metrics. With a mean absolute error (MAE) of 5.68, root mean squared error (RMSE) of 7.23, and an R2 score of 95.0\%, Random Forest regression produced the best results for calorie estimation. YOLO11n in conjunction with Random Forest regression offers a precise and effective calorie estimation for street food in Bangladesh, which is useful for dietary monitoring and mobile health apps.
 
 
 ![Food Calorie](https://github.com/user-attachments/assets/80407c48-6b1d-412a-8075-e56ac31fd4f3)
